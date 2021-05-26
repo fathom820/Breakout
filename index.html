@@ -1,0 +1,26 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+        <p id="debug"></p>
+				<div id="gameScreen">
+					<canvas id="canvas"></canvas>
+
+					<div id="gameOverMenu">
+						<p id="gameOverLabel" class="title">YOU LOSE.</p>
+						<button id="playAgainButton" class="menuButton" onclick="resetGame();">PLAY AGAIN</button>
+					</div>
+					<p id="livesLabel" class="label">Lives: </p>
+
+					<h1 id="info">Use A & D to control the paddle</h1>
+
+				</div>
+				
+    <script src="script.js"></script>
+  </body>
+</html>

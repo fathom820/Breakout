@@ -1,0 +1,106 @@
+body {
+	margin: 0;
+}
+canvas {
+    background-color: #FFFFFF;
+    border: solid 3px #000000;
+    margin: none;
+    display: block;
+}
+
+#debug {
+	display: none;
+}
+
+#livesLabel {
+	position: relative;
+	display: block;
+	width: fit-content;
+	height: 30px;
+	top: -60px;
+	left: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 20pt;
+	margin: 0;
+}
+.title {
+	
+}
+#gameScreen {
+	position: absolute;
+	margin: 0;
+	left: calc(50% - 512px);
+	top: calc(50% - 288px);
+	padding: none;
+	display: block;
+	width: 1024px;
+	height: 576px;
+}
+
+#gameOverMenu {
+	display: none;
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	top: 0;
+	left: 25%;
+	margin: auto;
+	justify-content: center;
+}
+
+#gameOverLabel {
+	position: relative;
+	font-family: Rockwell, Arial;
+	font-size: 64pt;
+	font-weight: 700;
+	display: block;
+	height: 100px;
+	top: calc(50% - 100px);
+	margin: auto;
+	text-align: center;
+}
+
+button {
+	position: absolute;
+	left: calc(50% - 75px);
+	top: calc(50% + 10px);
+	height: 40px;
+	width: 150px;
+	border-radius: 15px;
+	border: none;
+
+	background-color: #1a9e20;
+	color: #ffffff;
+	font-size: 16px;
+	transition: background-color 0.2s, box-shadow 0.2s;
+
+}
+button:hover {
+  background-color: #2ccc33;
+	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+button:active {
+  background-color: #06680a;
+	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.6);
+}
+
+#info {
+	position: absolute;
+	display: block;
+	text-align: center;
+	top: calc(50% + 30px);
+	left: calc(50% - 220px);
+	height: 30px;
+	width: 440px;
+	color: #555555;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 20pt;
+	opacity: 0;
+	visibility: hidden;
+
+	transition: opacity 1s, visibility 1s;
+
+}
